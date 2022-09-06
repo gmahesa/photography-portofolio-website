@@ -1,142 +1,160 @@
-*{
-    box-sizing: inherit;
-    box-sizing: border-box;
-}
-
-html {
-    margin: 0;
+* {
+  /* box-sizing: inherit; */
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    color: rgb(58, 58, 58);
-    background-color: white;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  max-width: 100vw;
+  margin: 0;
+  color: rgb(58, 58, 58);
+  background-color: white;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    text-align: center;
-    margin-inline: auto;
+  text-align: center;
+  margin-inline: auto;
 }
 
 .line {
-    width: 100%;
-    height: 0;
-    border-top: 2px solid  rgb(68, 68, 68);
-    margin-block: 10px;
-    opacity: 0.6;
+  width: 100%;
+  height: 0;
+  border-top: 2px solid rgb(68, 68, 68);
+  margin-block: 10px;
+  opacity: 0.6;
 }
 
-.show{
-    display: block !important;
+.show {
+  display: block !important;
 }
 
-nav, .side, .navButton {
-    width: 70%;
+nav,
+.side,
+.navButton {
+  width: 70%;
 }
 
-.navButton{
-    position: fixed;
-    z-index: 1;
-    /* width: 60%; */
-    display: flex;
-    justify-content: flex-end;
+.navButton {
+  position: fixed;
+  z-index: 1;
+  /* width: 60%; */
+  display: flex;
+  justify-content: flex-end;
 }
 .icon {
-    display: block;
-    margin: 14px;
-    height: 35px;
-    aspect-ratio: 1;
-    padding: 3px;
-    box-shadow: none;
-    /* background-color: white; */
+  display: block;
+  margin: 14px;
+  height: 35px;
+  aspect-ratio: 1;
+  padding: 3px;
+  box-shadow: none;
+  /* background-color: white; */
 }
 
-.icon:hover{
-    background-color: gray;
+.icon:hover {
+  background-color: gray;
 }
 
 .invert {
-    filter: invert();
-    /* background-color: rgb(51, 51, 51); */
+  filter: invert();
+  /* background-color: rgb(51, 51, 51); */
 }
 
 header {
-    width: 30%;
-    height: 100%;
-    display: block;
-    position: fixed;
+  width: 30%;
+  height: 100%;
+  display: block;
+  position: fixed;
 }
 
-
 nav {
-    display: none;
-    position: fixed;
-    height: 100%;
-    background-color: rgb(51, 51, 51);
-    z-index: 2;
+  display: none;
+  position: fixed;
+  height: 100%;
+  background-color: rgb(51, 51, 51);
+  z-index: 2;
+}
+
+#navBar {
+  width: 100%;
 }
 
 nav ul {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    padding-inline: 10px;
-    list-style-type: none;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding-inline: 10px;
+  list-style-type: none;
+  align-items: center;
 }
 
 nav ul li {
-    text-align: center;
-    margin: auto;
+  text-align: center;
+  margin: auto;
 }
 
 li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-.hero-container{    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(images/me.jpg);
-    min-height: 100%;
-    filter: grayscale();
+.hero-container {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(images/me.jpg);
+  min-height: 100%;
+  filter: grayscale();
+}
+
+.hero-container-inside {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(images/me.jpg);
+  min-height: 100%;
+  filter: grayscale();
+
+  display: none;
 }
 
 .hero-container:hover {
-    filter: none;
+  filter: none;
 }
 
 .side {
-    display: block;
+  display: block;
 
-    margin-left: 30%;
-    padding: 0;
-    align-items: center;
+  margin-left: 30%;
+  padding: 0;
+  align-items: center;
 }
 
 .content-container {
-    display: block;
-    /* margin-left:40% ; */
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    padding: 10px 10px;
-    max-width: 900px;
+  display: block;
+  /* margin-left:40% ; */
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  max-width: 900px;
 }
 
 .home {
-    padding-block: 20% !important;
+  padding-block: 20% !important;
 }
 
-.home, .portofolio, .about, .experience, .contact {
-    display: flex;
-    margin: 0;
-    padding: 20px 5px;
+.home,
+.portofolio,
+.about,
+.experience,
+.contact {
+  display: flex;
+  margin: 0;
+  padding: 20px 5px;
 }
 
 /* .home, .about, .contact {
@@ -148,83 +166,123 @@ li a {
 } */
 
 .home {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 button {
-    border-style: none;
-    padding: 8px 18px;
-    font-size: medium;
-    border-radius: 10px;
-    background-color: rgb(230, 230, 230);
+  border-style: none;
+  padding: 8px 18px;
+  font-size: medium;
+  border-radius: 10px;
+  background-color: rgb(230, 230, 230);
 }
 
-button:hover{
-    background-color: rgb(150, 150, 150);
+button:hover {
+  background-color: rgb(150, 150, 150);
 }
 
 .portofolio {
-    flex-direction: column;
-    /* justify-content: flex-start; */
+  flex-direction: column;
+  /* justify-content: flex-start; */
 }
 
 .container-images {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    padding: 0;
-    display: flex; 
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 0;
+  display: flex;
 }
 
-
-.portofolio .left, .portofolio .right {
-    flex-direction: column;
-    width: 50%;
-    padding: 5 5px;
-    /* background-color: aquamarine; */
-   
+.portofolio .left,
+.portofolio .right {
+  flex-direction: column;
+  width: 50%;
+  padding: 5 5px;
+  /* background-color: aquamarine; */
 }
 
-.portofolio .left img, .portofolio .right img {
-    display: block;
-    width: 100%;
-    height: auto;
-    padding: 5px;
-    /* border-radius: 10px; */
-    filter: grayscale();
+.portofolio .left img,
+.portofolio .right img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  /* border-radius: 10px; */
+  filter: grayscale();
 }
 
-.portofolio .left img:hover, .portofolio .right img:hover {
-    filter: none;
+.portofolio .left img:hover,
+.portofolio .right img:hover {
+  filter: none;
 }
 
 .about {
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .experience {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .contact {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .contact h4 {
-    margin: 0;
+  margin: 0;
 }
 
 .contact h5 {
-    margin-top: 0;
-    margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(197, 197, 197);
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(197, 197, 197);
+  padding: 10px;
+}
+
+footer svg {
+  margin-inline: 10px;
+}
+
+footer h5 {
+  margin: 5px 0 0 0;
+}
+
+.dont-image-lg {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For tablets: */
+  .side {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  header .hero-container {
+    display: none;
+  }
+
+  .hero-container-inside {
+    display: block;
+    width: 90%;
+    height: 300px;
+    margin-inline: auto;
+    margin-top: 5rem;
+  }
+
+  .navButton {
+    width: 100%;
+  }
 }
